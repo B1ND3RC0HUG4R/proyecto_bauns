@@ -1,0 +1,36 @@
+.login {
+    width: 60%;
+    min-width: 320px;
+    min-width: 320px;
+    margin-top: 100px;
+    padding: 30px 30px 30px 30px;
+    background-color: #717a7d;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    
+    opacity: 2;
+    filter: alpha(opacity=1);
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 220%;
+    color:#3c4245;
+    
+    margin-top: 10px;
+}

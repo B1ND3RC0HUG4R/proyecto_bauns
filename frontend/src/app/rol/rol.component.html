@@ -1,0 +1,38 @@
+<div class="main-content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Crear Rol</h4>
+                    </div>
+                    <div class="content">
+                        <form #rolForm="ngForm" (ngSubmit)="onSubmit()">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Rol</label>
+                                        <input type="text" name="rol" [(ngModel)]="rol.rol" class="form-control" placeholder="Agregar Rol...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Descripción</label>
+                                        <input type="text" name="descripcion" [(ngModel)]="rol.descripcion" class="form-control" placeholder="Agregar Descripción...">
+                                        <input type="hidden" name="activo" [(ngModel)]="rol.activo" value="1" class="form-control" placeholder="Agregar Descripción...">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" [disabled]="!rolForm.valid" class="btn btn-info btn-fill pull-right">Crear</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
