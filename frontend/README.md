@@ -20,9 +20,7 @@ Special thanks go to: Robert McIntosh for the notification system Chartist for t
 
 Quick start options:
 
-+ [Download from Github](https://github.com/creativetimofficial/light-bootstrap-dashboard-angular2/archive/master.zip).
-+ [Download from Creative Tim](https://www.creative-tim.com/product/light-bootstrap-dashboard-angular2).
-+ Clone the repo: `git clone https://github.com/creativetimofficial/light-bootstrap-dashboard-angular2.git`.
++ Clone the repo: `git clone  https://github.com/B1ND3RC0HUG4R/proyecto_bauns.git`.
 
 ## Terminal Commands
 
@@ -64,11 +62,14 @@ light-bootstrap-dashboard-angular
 │   │   │   ├── home.component.html
 │   │   │   ├── home.component.spec.ts
 │   │   │   └── home.component.ts
-│   │   ├── icons
-│   │   │   ├── icons.component.css
-│   │   │   ├── icons.component.html
-│   │   │   ├── icons.component.spec.ts
-│   │   │   └── icons.component.ts
+│   │   ├── auth
+│   │   │   ├── login
+│   │   │   │   ├── login.component.html
+│   │   │   │   ├── login.component.ts
+│   │   │   │   └── login.module.ts
+│   │   │   └── auth.guards.ts
+|   |   |   |__ auth.service.ts
+|   |   |   
 │   │   ├── layouts
 │   │   │   └── admin-layout
 │   │   │       ├── admin-layout.component.html
@@ -82,16 +83,6 @@ light-bootstrap-dashboard-angular
 │   │   │   │   ├── lbd-chart.component.html
 │   │   │   │   └── lbd-chart.component.ts
 │   │   │   └── lbd.module.ts
-│   │   ├── maps
-│   │   │   ├── maps.component.css
-│   │   │   ├── maps.component.html
-│   │   │   ├── maps.component.spec.ts
-│   │   │   └── maps.component.ts
-│   │   ├── notifications
-│   │   │   ├── notifications.component.css
-│   │   │   ├── notifications.component.html
-│   │   │   ├── notifications.component.spec.ts
-│   │   │   └── notifications.component.ts
 │   │   ├── shared
 │   │   │   ├── footer
 │   │   │   │   ├── footer.component.html
@@ -105,21 +96,26 @@ light-bootstrap-dashboard-angular
 │   │   │   ├── sidebar.component.html
 │   │   │   ├── sidebar.component.ts
 │   │   │   └── sidebar.module.ts
+│   │   ├── departamento
+│   │   │   ├── departamento.component.css
+│   │   │   ├── departamento.component.html
+│   │   │   ├── departamento.component.spec.ts
+│   │   │   └── departamento.component.ts
 │   │   ├── tables
 │   │   │   ├── tables.component.css
 │   │   │   ├── tables.component.html
 │   │   │   ├── tables.component.spec.ts
 │   │   │   └── tables.component.ts
-│   │   ├── typography
-│   │   │   ├── typography.component.css
-│   │   │   ├── typography.component.html
-│   │   │   ├── typography.component.spec.ts
-│   │   │   └── typography.component.ts
-│   │   ├── upgrade
-│   │   │   ├── upgrade.component.css
-│   │   │   ├── upgrade.component.html
-│   │   │   ├── upgrade.component.spec.ts
-│   │   │   └── upgrade.component.ts
+│   │   ├── new
+│   │   │   ├── new.component.css
+│   │   │   ├── new.component.html
+│   │   │   ├── new.component.spec.ts
+│   │   │   └── new.component.ts
+│   │   ├── rol
+│   │   │   ├── rol.component.css
+│   │   │   ├── rol.component.html
+│   │   │   ├── rol.component.spec.ts
+│   │   │   └── rol.component.ts
 │   │   └── user
 │   │       ├── user.component.css
 │   │       ├── user.component.html
@@ -144,29 +140,3 @@ light-bootstrap-dashboard-angular
 └── typings.json
 
 ```
-## Useful Links
-
-More products from Creative Tim: <https://www.creative-tim.com/bootstrap-themes>
-
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <https://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
-
-Social Media:
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
-
-[CHANGELOG]: ./CHANGELOG.md
-
-[version-badge]: https://img.shields.io/badge/version-1.8.0-blue.svg
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg

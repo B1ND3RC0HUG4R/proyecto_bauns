@@ -17,9 +17,8 @@
                             <tbody>
                                 <tr *ngFor="let row of news">
                                     <td>{{row.titulo}}</td>
-                                    <td><img [src]="rutaImg+row.src" class="imagen"></td>
+                                    <td><img [src]="row.src" class="imagen"></td>
                                     <td>{{row.descripcion}}</td>
-                                    <td>{{row.departamento_id}}</td>
                                     <td>
                                         <div *ngIf="isActivo(row.activo); else elseBlock">
                                             <button class="button_p" (click)="updateNew(row.id, 0)">Quitar</button>

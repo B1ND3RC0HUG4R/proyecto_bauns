@@ -48,6 +48,29 @@
     height: 180px;
 }
 
+.imagen_m{
+    width: 550px;
+    border-radius: 5px;
+    border-bottom: 10px;
+    height: 480px;
+}
+
+.div_m {
+    margin-left: 60px;    
+
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    margin-bottom: 20px;
+    opacity: 2;
+    filter: alpha(opacity=1);
+}
+
 .div-new {
     width: 320px;
     height: 350px;

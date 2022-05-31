@@ -15,16 +15,12 @@ declare interface TableData {
 })
 export class TablesComponent implements OnInit {
     news: New[];
-    dpto: string;
-    rutaImg: string;
     public tableData1: TableData;
 
     constructor( private http: HttpClient ) { }
 
     ngOnInit() {
         this.loadNews();
-        this.rutaImg= environment.rutaImg;
-        console.log(this.rutaImg);
     }
 
     updateNew(id: number, valor: number){
@@ -39,7 +35,7 @@ export class TablesComponent implements OnInit {
             data => {
                 this.news = data;
                 this.tableData1 = {
-                    headerRow: [ 'Título', 'Nombre Imagen', 'Descripción', 'Departamento', 'Publicar'],
+                    headerRow: [ 'Título', 'Nombre Imagen', 'Descripción', 'Publicar'],
                     dataRows: data
                 };
             }

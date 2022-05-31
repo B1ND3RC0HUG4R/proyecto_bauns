@@ -14,7 +14,7 @@ export class UserComponent implements OnInit {
   departamento: [];
   roles: [];
 
-  constructor( private http: HttpClient) { }
+  constructor( private http: HttpClient ) { }
 
   ngOnInit() { 
     this.showDepartamento();
@@ -28,7 +28,7 @@ export class UserComponent implements OnInit {
       data => {
         $.notify({
           icon: "pe-7s-smile",
-          message: "Rol creado correctamente"
+          message: "Usuario creado correctamente"
       },{
           type: 'success',
           timer: 1000,
@@ -41,7 +41,7 @@ export class UserComponent implements OnInit {
     error => {
       $.notify({
         icon: "pe-7s-attention",
-        message: "Error al crear rol "
+        message: "Error al crear Usuario "
       },{
         type: 'danger',
         timer: 1000,

@@ -5,26 +5,25 @@ import { environment } from 'environments/environment';
 declare var $:any;
 
 @Component({
-  selector: 'app-rol',
-  templateUrl: './rol.component.html',
-  styleUrls: ['./rol.component.css']
+  selector: 'app-departamento',
+  templateUrl: './departamento.component.html',
+  styleUrls: ['./departamento.component.css']
 })
-export class RolComponent implements OnInit {
-  rol: any = {};
+export class DepartamentoComponent implements OnInit {
+  departamento: any = {};
 
-  constructor( 
-    private http: HttpClient
-    ) { }
+  constructor( private http: HttpClient ) { }
 
-  ngOnInit() { }
+  ngOnInit(): void {
+  }
 
   onSubmit(){
-    this.rol['activo'] = 1;
-    return this.http.post<any>(environment.backEnd+'rol/', this.rol).subscribe(
+    this.departamento['activo'] = 1;
+    return this.http.post<any>(environment.backEnd+'departamento/', this.departamento).subscribe(
       data => {
         $.notify({
           icon: "pe-7s-smile",
-          message: "Rol creado correctamente"
+          message: "Departamento creado correctamente"
       },{
           type: 'success',
           timer: 1000,
@@ -37,7 +36,7 @@ export class RolComponent implements OnInit {
     error => {
       $.notify({
         icon: "pe-7s-attention",
-        message: "Error al crear rol "
+        message: "Error al crear Departamento "
       },{
         type: 'danger',
         timer: 1000,

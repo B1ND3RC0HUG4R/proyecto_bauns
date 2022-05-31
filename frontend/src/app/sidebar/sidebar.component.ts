@@ -13,6 +13,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/news', title: 'Noticias',  icon:'pe-7s-news-paper', class: '' },
     { path: '/table', title: 'Ver Noticias',  icon:'pe-7s-note2', class: '' },
     { path: '/rol', title: 'Roles',  icon:'pe-7s-user', class: '' },
+    { path: '/departamento', title: 'Departamento',  icon:'pe-7s-wallet', class: '' },
     { path: '/user', title: 'Usuarios',  icon:'pe-7s-albums', class: '' },
 ];
 export const ROUTESUSERS: RouteInfo[] = [

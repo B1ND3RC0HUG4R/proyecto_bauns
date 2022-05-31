@@ -33,7 +33,7 @@
                                         <br/>
                                         <legend></legend>
                                     </div>
-                                    <div *ngIf="pagina" class="content">
+                                    <div *ngIf="pagina" [hidden]="vermas" class="content">
                                         <div class="row">
                                             <div class="col-md-3 div-new" *ngFor="let new of data_news">
                                                 <div class="row">
@@ -43,10 +43,32 @@
                                                 </div>
                                                 <legend></legend>
                                                 <div class="content">
-                                                    <a (click)="showNew(7,content)"><img [src]="new.src" class="imagen"></a>
+                                                    <a (click)="showNew(new.id)"><img [src]="new.src" class="imagen"></a>
                                                     <br/><br/>
                                                     <legend></legend>
                                                     <p>{{new.descripcion}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div *ngIf="vermas" class="content">
+                                        <div class="row">
+                                            <div class="col-md-10 div_m">
+                                                <div class="row">
+                                                    <div class="col-md-12" style="margin-top:10px">
+                                                        <h6>{{data_new.titulo}}</h6>
+                                                        <button class="button_s" (click)="verMenos()">Cerrar</button>
+                                                    </div>
+                                                </div>
+                                                <legend></legend>
+                                                <div class="content">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <p>{{data_new.descripcion}}</p>
+                                                        </div>
+                                                        <div class="col-md-8" style="margin-top:10px">
+                                                            <img [src]="data_new.src" class="imagen_m">
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>

@@ -14,6 +14,7 @@ import { RolComponent } from '../../rol/rol.component';
 import { TablesComponent } from '../../tables/tables.component';
 import { LoginComponent } from '../../auth/login/login.component';
 import { UserComponent } from 'app/user/user.component';
+import { DepartamentoComponent } from 'app/departamento/departamento.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { UserComponent } from 'app/user/user.component';
     RolComponent,
     TablesComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    DepartamentoComponent
   ]
 })
 

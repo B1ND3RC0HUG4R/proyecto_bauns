@@ -15,13 +15,14 @@ export class PageComponent implements OnInit {
 
   news: any = {};
   departamento: [];
-  data_news: [];
   previsualizacion: string;
-  archivos: any = []
-  loading: boolean
-  pagina: boolean
-  creat: boolean
+  archivos: any = [];
+  loading: boolean;
+  pagina: boolean;
+  vermas: boolean;
+  creat: boolean;
   closeResult = '';
+  data_news: any = {};
   data_new: any = {};
 
   constructor(
@@ -45,9 +46,12 @@ export class PageComponent implements OnInit {
   }
 
   showNew(id){
+    this.data_new= {};
+    this.vermas=true;
     return this.http.get<any>(environment.backEnd+'new/'+id).subscribe(
       data => {
-          this.data_news = data;
+        this.data_new = data;
+        console.log(this.data_new.titulo);
     });
   }
   
@@ -148,6 +152,11 @@ export class PageComponent implements OnInit {
     }else{
       this.creat = false;
     }
+  }
+
+  verMenos(){
+    this.data_new= {}
+    this.vermas=false;
   }
 
   redirect(){
