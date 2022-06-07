@@ -42,9 +42,14 @@ class NoticiasController extends Controller
             return response()->json($news_v->errors()->toJson(), 400);
         }
 
-        $ruta = $request->file('src')->store('public');
-        $request['src'] = Storage::url($ruta);
-        $new = Noticias::create($request->all());
+        $carpeta = "img";
+        $files = $request->file('src');
+        $nombre_archivo = $files->getClientOriginalName();
+
+        Storage::disk('ftp')->put($carpeta.'/'.$nombre_archivo.'/', \File::get($files));
+        $db_save = $request->all();
+        $db_save['src'] = $nombre_archivo;
+        $new = Noticias::create($db_save);
 
 
         return response()->json([
